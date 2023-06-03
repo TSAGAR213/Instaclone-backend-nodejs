@@ -36,7 +36,9 @@ mongoose.connect(process.env.DATABASE_URL)
         console.error(`Error connecting to the database.${err}`);
     })
 
-
+app.get("/",(req,res)=>{
+    res.json({message:"Welcome to instaclone API"})
+})
 
 app.get("/instagramUser",(req,res)=>{
 
