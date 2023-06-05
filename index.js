@@ -30,7 +30,7 @@ const upload=multer({storage:fileStorageEngine});
 cloudinary.config({ 
     cloud_name: 'drmsakwmk', 
     api_key: '162118638716756', 
-    api_secret: 'GtlhbjMIVitGVqLz0WKh_yHkKas' 
+    api_secret: process.env.CLOUDINARY
   });
 
 
